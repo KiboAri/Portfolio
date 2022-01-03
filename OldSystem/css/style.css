@@ -1,0 +1,197 @@
+:root
+{
+    --shadowSize: 5px;
+    --blur: 10px;
+    --circleSize: 300px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0;
+
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Segoe UI;
+    color: #434243;
+}
+
+button{border-style: none;}
+a{place-content: center; display: grid;}
+
+.wrapper{display: flex; flex-wrap: wrap;}
+
+.login-box{
+    /*background-color: #434243;*/
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.recent-box{
+    /*background-color: aquamarine;*/
+    width: calc(100% - 400px - 400px);
+}
+
+.no-border{border: none;}
+
+.rest{width: calc(100% - 400px);}
+
+/*#region DropDown*/
+
+.link{
+    cursor: pointer;
+}
+
+.dropdown
+{
+    position: absolute;
+    width: 200px;
+}
+
+.dropdown-menu
+{
+    /*margin: 50px 50px 0 50px;*/
+
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: e0e0e0;
+    padding: .75rem;
+    border-radius: 8px;
+
+    box-shadow:  var(--shadowSize) var(--shadowSize) var(--blur) #bebebe,
+    calc(-1 * var(--shadowSize)) calc(-1 * var(--shadowSize)) var(--blur) #ffffff; 
+    opacity: 0;
+}
+
+.dropdown > .link:focus + .dropdown-menu
+{
+    opacity: 1;
+}
+
+/*#endregion DropDown*/
+/*#region Blocks*/
+
+.block-color
+{
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow:  var(--shadowSize) var(--shadowSize) var(--blur) #bebebe,
+    calc(-1 * var(--shadowSize)) calc(-1 * var(--shadowSize)) var(--blur) #ffffff; 
+    transition-duration: 0.5s;
+}
+
+/* Block 1 */
+
+/* PLS REWORK THE BLOCK SYSTEM */
+/* IT'S BROKEN OR SOMETHING */
+
+.block-1x1, .block-1x2, .block-1x3, .block-1xMax{height: 100px;}
+
+.block-1x1{width: 100px;}
+.block-1x2{width: 200px;}
+.block-1x3{width: 300px; margin: 0 0 calc(var(--shadowSize) + 5px) 0;}
+
+.block-1xMax{width: 100%;}
+
+.block-1x2:hover {width: 180px; height: 80px; }
+.block-1x2:hover {width: 280px; height: 80px; }
+
+.block-1x1-anim:hover{ width: 80px; height: 80px; margin: 10px 10px 10px;}
+.block-1x3-anim:hover{ width: 280px; height: 80px; margin-top: calc(var(--shadowSize) + 15px); margin-bottom: calc(var(--shadowSize) + 5px);}
+
+/* Block 2 */
+
+.block-2x1, .block-2x2, .block-2x3{width: 200px;}
+
+.block-2x1{height: 100px;}
+.block-2x2{height: 200px;}
+.block-2x3{height: 300px;}
+
+/* Block 3 */
+
+.block-3x1
+{
+    width: 300px;
+    height: 100px;
+}
+
+.block-3x2
+{
+    width: 300px;
+    height: 200px;
+}
+
+.block-3x3
+{
+    width: 300px;
+    height: 300px;
+}
+
+/*#endregion Blocks*/
+
+.block-sort-evenly
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu
+{
+    display: block;
+    justify-content: center;
+
+    width: 400px;
+    height: 100%;
+}
+
+.menu-dummy
+{
+    width: 400px;
+    height: 100vh;
+}
+
+.centering, .grid
+{
+    display: grid;
+}
+
+.centering{
+    place-items: center;
+}
+
+.block-circle
+{
+    border-radius: 100%;
+    width: var(--circleSize);
+    height: var(--circleSize);
+    background: #434243;
+    margin-top: 50px;
+}
+
+.block-auto-left-margin
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#region heightSpace*/
+
+.heightSpace16px, .heightSpace32px, .heightSpace64px, .heightSpace128px
+{width: 100%;}
+
+.heightSpace16px{height: 16px;}
+.heightSpace20px{height: 20px;}
+.heightSpace40px{height: 40px;}
+.heightSpace50px{height: 50px;}
+.heightSpace60px{height: 60px;}
+.heightSpace80px{height: 80px;}
+.heightSpace100px{height: 100px;}
+
+/*#endregion heightSpace*/
+
+.float-left{float: left;}
+.float-right{float: right;}
