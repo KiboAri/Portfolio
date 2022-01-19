@@ -1,0 +1,25 @@
+*{padding: 0; margin: 0;}
+
+:root
+{
+    --background: #293241;
+    --color0: #ee6c4d;
+    --color1: #e0fbfc;
+    --color2: #98c1d9;
+    --color3: #3d5a80;
+}
+
+body
+{
+    background-color: #293241;
+    color: var(--color0);
+    font-family: 'Segoe UI';
+    font-size: 40px;
+
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+}
+
+h1{text-align: center;}
