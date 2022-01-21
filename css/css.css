@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{padding: 0; margin: 0;}
+
+:root
+{
+    --background: #293241;
+    --color0: #ee6c4d;
+    --color1: #e0fbfc;
+    --color2: #98c1d9;
+    --color3: #3d5a80;
+}
+
+body
+{
+    background-color: var(--background);
+    color: var(--color1);
+    font-family: 'Roboto', sans-serif;;
+    font-size: 40px;
+    height: 100vh;
+}
+
+.searchbar
+{
+    width: 720px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid var(--color0);
+    padding: 10px;
+    color: var(--color1);
+}
+
+.searchbar:focus
+{
+    border: 2px solid var(--color0);
+    outline: none;
+}
+
+.searchbar::placeholder
+{
+    color: var(--color1);
+    opacity: 50%;
+}
+
+
+header{height: 50px;}
+
+
+.sandwich-block
+{
+    width: calc(8px * 4);
+    height: 4px;
+    background-color: var(--color0);
+    border-radius: 8px;
+}
+
+.sandwich-icon
+{
+    height: 30px;
+    width: 50px;
+
+    margin: 30px;
+
+    position: absolute;
+}
+
+/* #region Shortcuts*/
+
+.shortcut-main
+{
+    widows: 720px;
+}
+
+.shortcut-icon
+{
+    background-color: var(--color0);
+    width: 50px; height: 50px;
+    border-radius: 100%;
+}
+
+.shortcut-box
+{
+    width: 100px;
+    height: 125px;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--color1);
+}
+
+.shortcut-box-text
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--color0);
+
+    font-size: 18px;
+
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+/* #endregion */
+/* #region Flex/Grid Settings*/
+
+.display-grid
+{
+    display: grid;
+    place-items: center; 
+}
+
+.display-height
+{
+    height: 90vmin;
+}
+
+.display-flex-center
+{
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-content-center
+{
+    justify-content: center;
+}
+
+.flex-space-evenly
+{
+    justify-content: space-evenly;
+}
+
+.flex-evenly-content_items
+{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper
+{
+    flex-wrap: wrap;
+}
+
+.wrapper-reverse
+{
+    flex-wrap: wrap-reverse;
+}
+
+/* #endregion */
+
+h1{text-align: center; color: var(--color0);}
+
+@media (max-width: 720px)
+{
+    .searchbar{width: 100%;}
+    form{width: 100%;}
+    .display-height{height: 90vh;}
+
+    /* #region Shortcuts*/
+
+    .shortcut-main
+    {
+        widows: 100%;
+    }
+
+    .shortcut-box
+    {
+        width: 65px;
+        height: 65px;
+    }
+
+    .shortcut-box-text
+    {
+        display: none;
+    }
+
+    /* #endregion */
+}
