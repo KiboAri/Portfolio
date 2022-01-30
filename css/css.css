@@ -22,7 +22,7 @@ body
 
 .searchbar
 {
-    width: 720px;
+    width: calc(720px - 100px);
     height: 50px;
     border-radius: 8px;
     background-color: transparent;
@@ -43,6 +43,13 @@ body
     opacity: 50%;
 }
 
+.submit-button
+{
+    background-color: var(--color0);
+    border: 0px solid;
+    height: 50px; width: 50px;
+    border-radius: 8px;
+}
 
 header{height: 50px;}
 
@@ -161,7 +168,7 @@ h1{text-align: center; color: var(--color0);}
 
 @media (max-width: 720px)
 {
-    .searchbar{width: 100%;}
+    .searchbar{width: calc(100% - 60px);}
     form{width: 100%;}
     .display-height{height: 90vh;}
 
