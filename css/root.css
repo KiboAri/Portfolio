@@ -8,3 +8,15 @@
     --Color03: #98C1D9;
     --Color04: #3D5A80;
 }
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+body
+{
+    background-color: var(--Color00);
+    font-family: Roboto;
+    color: var(--Color03);
+}
