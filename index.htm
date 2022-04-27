@@ -1,208 +1,441 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/root.css">
-</head>
-<body>
-    <br>
-    <main class="grid-centered">
-        <!-- Intodrouction -->
-        <div class="grid-centered">
-            <div class="profile_img">
-                <img src="img/kibo3.png" alt="Profile Picture">
-            </div>
+    <!-- Own Css -->
+    <link rel="stylesheet" href="core.css">
+    <link rel="stylesheet" href="swiper.css">
 
-            <h1>Portfolio</h1>
-            <h2>Kibo Ari</h2>
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <div class="bg1">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="btn link">Portfolio</a>
+                  <form class="d-flex">
+                    <a class="btn link">Home</a>
+                    <a class="btn link">About</a>
+                    <a class="btn link">Contact</a>
+                  </form>
+                </div>
+              </nav>
         </div>
+    </div>
 
-        <br><br><br>
+    <div class="bg2"></div><br>
 
-        <!-- Recent upload or works -->
-        <div class="box_0x0">
-            <h3 class="centered-respons-text">Recent</h3>
-            <!-- Image + Text[Explanation] -->
-            <div class="flex-stretched">
-                <img src="img/test.png" class="box_0x1 recentPostImg" alt="Recent Post Picture">
-                <div class="box_0x1 margin_left_0x0 overload_hide_0x0">
-                    <h3>Update 001</h3>
-                    <p>
-                        There is nothing to show at the moment. Since I'm pretty busy with school. What I can actually show is this website. 
-                        <br><br>
-                        I try to make it better again and again. And it can change several times in one day. 
-                        <br><br>
-                        When this website is finished, about 50%, then I will start with other projects. But at the moment it is only under 5%. 
-                    </p>
-                </div>
-            </div>
+    <div class="container">
+        <div class="row intro rounded-18px-0 shadow">
+            <div class="col-sm-1"></div>  
+            <div class="col-sm-5" id="profile-img"><img class="img-fluid rounded-18px" src="kibo3.png" alt="Profile Picture"></div>   <!-- Col One -->
+            <div class="col-sm-1" id="profile-col1-hide"></div>                                                                    <!-- Col Two -->
+            <div class="col-sm-4" id="profile-txt">
+                <br class="mobile-only-br">                                                                    <!-- Col Three -->
+                <h6 class="opacity-75">Hello Everybody, I Am</h6>
+                <h1>Kibo Ari</h1>
+                <h5 class="opacity-75">Student | Programmer | Designer</h5>
+
+                <br>
+
+                <p>
+                    Thank you for visiting my website.
+                    Hopefully everything you are looking for will be clear here.
+                    On this website you will learn what I can and cannot do.
+                    And what I plan to do in the future. You will also see all my projects here.
+                    <br><br>
+                    Of course you can also find my social media here too.
+                    I will keep this website updated.
+                </p>
+
+                <br>
+
+                <p>
+                    <i class="bi bi-gift"></i> 18.06.2003                   <br>
+                    <i class="bi bi-envelope"></i> umut.cigci@hotmail.com   <br>
+                    <i class="bi bi-house"></i> Vieanna 
+                </p>
+            </div>                                                           
+            <div class="col-sm-1"></div>  
         </div>
+    </div>
 
-        <br><br><br>
+    <br> <br>
 
-        <!-- My skills list thingy -->
-        <!-- Slider main container -->
-        <h3>Things I can</h3>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-
-            <!-- Front End -->
-            <div class="swiper-slide">
-                <div class="grid-centered">
-                    <header><h3>Front End</h3></header>
-                    <div class="icon_container">
-                        <img class="icon" src="img/svg/icons/html.svg">
-                        <img class="icon" src="img/svg/icons/css3.svg">
-                        <img class="icon" src="img/svg/icons/javascript.svg">
-                    </div>
-                    <div class="text">
-                        <p>
-                            There is nothing to say about that. I know these languages. I learned them when I was very young. I am not perfect in these languages. But I should be experienced now.
-                            <br><br>
-                            And I am willing to learn more about them. To improve myself in these languages.
-                        </p>
-                    </div>
-                    <nav>
-                        <a href="#">Learn more...</a>
-                    </nav>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
             </div>
+            <div class="col-sm-1"></div>
+            <br><br>
+            <div class="col-sm-5 bg-white rounded-18px-0 shadow ">
+                <h2 class="space01">Favorite Things</h2>
+                <h6 class="mobile-header-unchange">Food:</h6>
+                <p>Pizza | Salat | Cake | Taco | Chicken Nuggets</p>
 
-            <!-- Back End -->
-            <div class="swiper-slide">
-                <div class="grid-centered">
-                    <header><h3>Back End</h3></header>
-                    <div class="icon_container">
-                        <img class="icon" src="img/svg/icons/php.svg">
-                    </div>
-                    <div class="text">
-                        <p>
-                            I started learning PHP in school. I find this language appropriate. I will be able to use this language well.
-                            <br><br>
-                            Then I will make login system. And I am really looking forward to it.
-                        </p>
-                    </div>
-                    <nav>
-                        <a href="#">Learn more...</a>
-                    </nav>
-                </div>
-            </div>
+                <h6 class="mobile-header-unchange">Movie Genres:</h6>
+                <p>Horror | Science Fiction | Thriller</p>
 
-            <!-- Game Engines + C-Sharp -->
-            <div class="swiper-slide">
-                <div class="grid-centered">
-                    <header><h3>Game Engines + C-Sharp</h3></header>
-                    <div class="icon_container">
-                        <img class="icon" src="img/svg/icons/csharp.svg">
-                        <img class="icon" src="img/svg/icons/unity.svg">
-                        <img class="icon" src="img/svg/icons/gm.svg">
-                    </div>
-                    <div class="text">
-                        <p>
-                            I only know the basics of it.
-                            <br><br>
-                            Gamemaker Studio was one of the first programs I started programming with.
-                            <br><br>
-                            After that I started with Unity. That's also where I learned C-Sharp.
-                        </p>
-                    </div>
-                    <nav>
-                        <a href="#">Learn more...</a>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- Office -->
-            <div class="swiper-slide">
-                <div class="grid-centered">
-                    <header><h3>Office</h3></header>
-                    <div class="icon_container">
-                        <img class="icon" src="img/svg/icons/access.svg">
-                        <img class="icon" src="img/svg/icons/word.svg">
-                        <img class="icon" src="img/svg/icons/powerpoint.svg">
-                        <img class="icon" src="img/svg/icons/excel.svg">
-                    </div>
-                    <div class="text">
-                        <p>
-                            Microsoft Office.<br>
-                            Ah, yes the norm of what everyone can do.
-                            <br><br>
-                            I find that I am professional with the Offices. Except Access.
-                            <br><br>
-                            I am currently learning Access in school.
-                        </p>
-                    </div>
-                    <nav>
-                        <a href="#">Learn more...</a>
-                    </nav>
-                </div>
-            </div>
-
-            <!-- Blender -->
-            <div class="swiper-slide">
-                <div class="grid-centered">
-                    <header><h3>Blender</h3></header>
-                    <div class="icon_container">
-                        <img class="icon" src="img/svg/icons/blender.svg">
-                    </div>
-                    <div class="text">
-                        <p>
-                            The great program. Which helps you to make full 3D models and render.
-                            <br><br>
-                            I do not want to brag, but I already know Blender well. I would classify myself as an amateur xD
-                        </p>
-                    </div>
-                    <nav>
-                        <a href="#">Learn more...</a>
-                    </nav>
-                </div>
-            </div>
-
-        </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        </div>    
-
-        <script src="js/test.js"></script>
-
-
-        <br><br><br>
-
-        <!-- My skills list thingy to want to learn -->
-        <div class="box_0x0">
-            <h3 class="centered-respons-text">Things I want to learn</h3>
-
-            <div class="icons_container bg_0x0 ">
-                <img class="icon" src="img/svg/icons/mysql.svg">
-                <img class="icon" src="img/svg/icons/node-js.svg">
-                <img class="icon" src="img/svg/icons/react.svg">
-                <img class="icon" src="img/svg/icons/angular.svg">
-                <img class="icon" src="img/svg/icons/bootstrap.svg">
-                <img class="icon" src="img/svg/icons/docker.svg">
-                <img class="icon" src="img/svg/icons/firebase.svg">
-                <img class="icon" src="img/svg/icons/flutter.svg">
-                <img class="icon" src="img/svg/icons/kotlin.svg">
-                <img class="icon" src="img/svg/icons/mongodb.svg">
-                <img class="icon" src="img/svg/icons/ruby.svg">
-                <img class="icon" src="img/svg/icons/rust.svg">
-                <img class="icon" src="img/svg/icons/swift.svg">
-                <img class="icon" src="img/svg/icons/typescript.svg">
-                <img class="icon" src="img/svg/icons/vue.svg">
-                <img class="icon" src="img/svg/icons/c.svg">
-                <img class="icon" src="img/svg/icons/c++.svg">
+                <h6 class="mobile-header-unchange">Game Genres:</h6>
+                <p>Multiplayer | Survival | Farming | Shooter Games</p>
             </div>
         </div>
+    </div>
 
-    </main>
-</body>
+    <br> <br>
+
+    <div class="bg3">
+        <br>
+        <div class="container">
+            <h1>Skills</h1>
+            <br>
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+    
+                <!-- Adobe -->
+                <div class="swiper-slide rounded-18px shadow card-body bg-white">
+                    <h5 class="card-title">Adobe</h5>
+
+                    <a class="card-anker" href=""> <!-- XD -->
+                        <p class="card-text">XD</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Photoshop -->
+                        <p class="card-text">Photoshop</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Illustrator -->
+                        <p class="card-text">Illustrator</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- InDesign -->
+                        <p class="card-text">InDesign</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+                </div>
+
+                <!-- Office -->
+                <div class="swiper-slide rounded-18px shadow card-body bg-white">
+                    <h5 class="card-title">Office</h5>
+
+                    <a class="card-anker" href=""> <!-- Word -->
+                        <p class="card-text">Word</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Excel -->
+                        <p class="card-text">Excel</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Powerpoint -->
+                        <p class="card-text">Powerpoint</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Access -->
+                        <p class="card-text">Access</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+                </div>
+    
+                <!-- Unity -->
+                <div class="swiper-slide rounded-18px shadow card-body bg-white">
+                    <h5 class="card-title">Unity</h5>
+
+                    <a class="card-anker" href=""> <!-- Word -->
+                        <p class="card-text">3D</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Excel -->
+                        <p class="card-text">2D</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Access -->
+                        <p class="card-text">Optimization</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Powerpoint -->
+                        <p class="card-text">Shaders</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+                </div>
+
+                <!-- Blender -->
+                <div class="swiper-slide rounded-18px shadow card-body bg-white">
+                    <h5 class="card-title">Blender</h5>
+
+                    <a class="card-anker" href=""> <!-- Word -->
+                        <p class="card-text">Rendering</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Excel -->
+                        <p class="card-text">Moddeling</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Powerpoint -->
+                        <p class="card-text">Shaders</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Access -->
+                        <p class="card-text">Sculpture</p>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="swiper-slide rounded-18px shadow card-body bg-white">
+                    <h5 class="card-title">Programming Languages</h5>
+
+                    <a class="card-anker" href=""> <!-- Powerpoint -->
+                        <p class="card-text">Html</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Access -->
+                        <p class="card-text">Css</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Word -->
+                        <p class="card-text">C#</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+                    <a class="card-anker" href=""> <!-- Excel -->
+                        <p class="card-text">JavaScript</p>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </a>
+
+
+                </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>    
+    
+            <script src="js/test.js"></script>
+
+            <br><br>
+        </div>
+    </div>
+
+    <div class="bg4">
+        <br>
+        <div class="container">
+            <h1 class="white-text">Offerings to my clients</h1>
+    
+            <div class="row">
+                <!--
+                <div class="col-sm-4 card c2 rounded-18px-0 shadow">
+                    <h1>Website</h1>
+                </div>
+
+                <div class="col-sm-4 card c2 rounded-18px-0 shadow">
+                    <h1>Video Cutting</h1>
+                </div>                
+
+                <div class="col-sm-4 card c2 rounded-18px-0 shadow">
+                    <h1>Lessons</h1>
+                </div>
+                -->
+
+                <div class="col-sm-12 card rounded-18px-0 shadow">
+                    <br><br><br>
+                    <h1 class="centered-text">No Offers Currently</h1>
+                    <br><br><br>
+                </div>
+
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="container">
+        <br>
+        <h1>Things that I want to learn</h1>
+
+        <div class="row">
+            <div class="col-sm-12 bg-white shadow rounded-18px-0">
+                <div class="row space02">
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/angular.svg"   alt="Angular Icon">    Angular    </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/docker.svg"    alt="Dockker Icon">    Docker     </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/firebase.svg"  alt="Firebase Icon">   Firebase   </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/flutter.svg"   alt="Flutter Icon">    Flutter    </a></div>
+
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/node-js.svg"   alt="Node Js Icon">    Node Js    </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/typescript.svg"alt="Typescript Icon"> Typescript </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/vue.svg"       alt="Vue Icon">        Vue        </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/kotlin.svg"    alt="Kotlin Icon">     Kotlin     </a></div>
+
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/bootstrap.svg" alt="Bootstrap Icon">  Bootstrap  </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/swift.svg"     alt="Switft Icon">     Switft     </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/react.svg"     alt="React Icon">      React      </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/mongodb.svg"   alt="MongoDB Icon">    MongoDB    </a></div>
+                
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/ruby.svg"      alt="Ruby Icon">       Ruby       </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/rust.svg"      alt="Rust Icon">       Rust       </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/c.svg"         alt="C Icon">          C          </a></div>
+                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/c++.svg"       alt="C++ Icon">        C++        </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+            var height;
+            var width;
+
+        	window.onload = function()
+            {
+                height = window.innerHeight;
+                width = window.innerWidth;
+            };
+
+            window.onresize = function()
+            {
+                height = window.innerHeight;
+                width = window.innerWidth;
+                
+                if(width < 1200 && width > 575)
+                {
+                    //alert("Hey");
+                    document.getElementById("profile-img").className = "hide";
+                    document.getElementById("profile-col1-hide").className = "hide";
+                    document.getElementById("profile-txt").className = "col-sm-10";
+                }else
+                {
+                    document.getElementById("profile-img").className = "col-sm-5";
+                    document.getElementById("profile-txt").className = "col-sm-4";
+                    document.getElementById("profile-col1-hide").className = "col-sm-1";
+                }
+            }
+
+
+    </script>
+
+
+  </body>
 </html>
