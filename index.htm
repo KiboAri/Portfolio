@@ -417,11 +417,15 @@
 
         	window.onload = function()
             {
-                height = window.innerHeight;
-                width = window.innerWidth;
+                Correction();
             };
 
             window.onresize = function()
+            {
+                Correction();
+            };
+
+            function Correction()
             {
                 height = window.innerHeight;
                 width = window.innerWidth;
