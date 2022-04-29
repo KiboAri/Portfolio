@@ -369,25 +369,32 @@
         <div class="row">
             <div class="col-sm-12 bg-white shadow rounded-18px-0">
                 <div class="row space02">
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/angular.svg"   alt="Angular Icon">    Angular    </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/docker.svg"    alt="Dockker Icon">    Docker     </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/firebase.svg"  alt="Firebase Icon">   Firebase   </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/flutter.svg"   alt="Flutter Icon">    Flutter    </a></div>
+                    <div class="col-sm-3" id="skills-icon-0"><a><img class="icons" src="img/svg/icons/angular.svg"   alt="Angular Icon">    Angular    </a></div>
+                    <div class="col-sm-3" id="skills-icon-1"><a><img class="icons" src="img/svg/icons/docker.svg"    alt="Dockker Icon">    Docker     </a></div> 
+                    <div class="col-sm-1 only-mobile"></div>
+                    <div class="col-sm-3" id="skills-icon-2"><a><img class="icons" src="img/svg/icons/firebase.svg"  alt="Firebase Icon">   Firebase   </a></div>
+                    <div class="col-sm-3" id="skills-icon-3"><a><img class="icons" src="img/svg/icons/flutter.svg"   alt="Flutter Icon">    Flutter    </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
 
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/node-js.svg"   alt="Node Js Icon">    Node Js    </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/typescript.svg"alt="Typescript Icon"> Typescript </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/vue.svg"       alt="Vue Icon">        Vue        </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/kotlin.svg"    alt="Kotlin Icon">     Kotlin     </a></div>
+                    <div class="col-sm-3" id="skills-icon-4"><a><img class="icons" src="img/svg/icons/node-js.svg"   alt="Node Js Icon">    Node Js    </a></div>
+                    <div class="col-sm-3" id="skills-icon-5"><a><img class="icons" src="img/svg/icons/typescript.svg"alt="Typescript Icon"> Typescript </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
+                    <div class="col-sm-3" id="skills-icon-6"><a><img class="icons" src="img/svg/icons/vue.svg"       alt="Vue Icon">        Vue        </a></div>
+                    <div class="col-sm-3" id="skills-icon-7"><a><img class="icons" src="img/svg/icons/kotlin.svg"    alt="Kotlin Icon">     Kotlin     </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
 
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/bootstrap.svg" alt="Bootstrap Icon">  Bootstrap  </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/swift.svg"     alt="Switft Icon">     Switft     </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/react.svg"     alt="React Icon">      React      </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/mongodb.svg"   alt="MongoDB Icon">    MongoDB    </a></div>
+                    <div class="col-sm-3" id="skills-icon-8"><a><img class="icons" src="img/svg/icons/bootstrap.svg" alt="Bootstrap Icon">  Bootstrap   </a></div>
+                    <div class="col-sm-3" id="skills-icon-9"><a><img class="icons" src="img/svg/icons/swift.svg"     alt="Switft Icon">     Switft     </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
+                    <div class="col-sm-3" id="skills-icon-10"><a><img class="icons" src="img/svg/icons/react.svg"     alt="React Icon">      React      </a></div>
+                    <div class="col-sm-3" id="skills-icon-11"><a><img class="icons" src="img/svg/icons/mongodb.svg"   alt="MongoDB Icon">    MongoDB    </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
                 
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/ruby.svg"      alt="Ruby Icon">       Ruby       </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/rust.svg"      alt="Rust Icon">       Rust       </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/c.svg"         alt="C Icon">          C          </a></div>
-                    <div class="col-sm-3"><a><img class="icons" src="img/svg/icons/c++.svg"       alt="C++ Icon">        C++        </a></div>
+                    <div class="col-sm-3" id="skills-icon-12"><a><img class="icons" src="img/svg/icons/ruby.svg"      alt="Ruby Icon">       Ruby       </a></div>
+                    <div class="col-sm-3" id="skills-icon-13"><a><img class="icons" src="img/svg/icons/rust.svg"      alt="Rust Icon">       Rust       </a></div>
+                    <div class="col-sm-1 only-mobile"></div>
+                    <div class="col-sm-3" id="skills-icon-14"><a><img class="icons" src="img/svg/icons/c.svg"         alt="C Icon">          C          </a></div>
+                    <div class="col-sm-3" id="skills-icon-15"><a><img class="icons" src="img/svg/icons/c++.svg"       alt="C++ Icon">        C++        </a></div>
                 </div>
             </div>
         </div>
@@ -430,6 +437,22 @@
                     document.getElementById("profile-img").className = "col-sm-5";
                     document.getElementById("profile-txt").className = "col-sm-4";
                     document.getElementById("profile-col1-hide").className = "col-sm-1";
+                }
+
+
+                if(width < 575)
+                {
+                    for (var i = 0; i < 16; i++) 
+                    {
+                        document.getElementById("skills-icon-" + i + "").className = "col";
+                    }
+                }
+                else
+                {
+                    for (var i = 0; i < 16; i++) 
+                    {
+                        document.getElementById("skills-icon-" + i + "").className = "col-sm-3";
+                    }
                 }
             }
 
