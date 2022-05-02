@@ -107,6 +107,8 @@ a img
     margin-top: 10px;
 }
 
+.only-mobile{display: none;}
+
 /* Mobile */
 @media (max-width: 575px)
 {
@@ -117,4 +119,5 @@ a img
     .mobile-header-unchange{text-align: left;}
     .mobile-only-br{display: unset;}
     .only-desktop{display: none;}
+    .only-mobile{display: unset;}
 }
